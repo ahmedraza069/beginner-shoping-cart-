@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+/* common css end */
+#cart{
+    margin-top: 10px;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+.main{
+    padding: 40px 50px;
+    background-color: #ccffcc;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+#phone{
+    display: block;
+}
+.part{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 30px;
+}
+.image_part img{
+    width: 70px;
+    height: 100px;
+}
+.write_part{
+    padding: 20px 0;
+}
+.icon_part{
+    padding: 30px 0;
+}
+
+.icon_part input{
+    width: 80PX;
+    height: 40px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+.icon_part button{
+    border: none;
+
+}
+.icon_part button i{
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    padding: 8px;
+}
+.last_icon{
+    font-size: 40px;
+    color: red;
+    padding-right: 20px;
+}
+.image_one img{
+    width: 110px;
+    height: 110px;
+}
+.total_main{
+   padding-top: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+.part .total{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    line-height: 20px;
+}
+.part .balance{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    line-height: 20px;
+}
+.btn{
+    padding: 10px 20px;
+    text-align: center;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.last_icon button{
+    border: none;
+    background-color: transparent;
+}
+.last_icon button i{
+    color: red;
+    
+}
+/* payment method succesfull */
+#none{
+    display: none;
+    padding: 0;
+    background-color: #ccffcc;
+}
+
+#congratulations{ 
+    display: flex;
+    justify-content: center;
+    background-color: #ccffcc;
+    padding: 110px 0;
+   
+}
+
+
+$primBlue: #0073ff;
+$white: #fff;
+$blueGray: #607d8b;
+$slate: #54617a;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@font-face {
+    font-family: 'bariolregular';
+    src: url('https://res.cloudinary.com/dw1zug8d6/raw/upload/v1541747126/fonts/bariol/bariol_regular-webfont.eot'),
+         url('https://res.cloudinary.com/dw1zug8d6/raw/upload/v1541747224/fonts/bariol/bariol_regular-webfont.woff2') format('woff2'),
+         url('https://res.cloudinary.com/dw1zug8d6/raw/upload/v1541747128/fonts/bariol/bariol_regular-webfont.woff') format('woff'),
+         url('https://res.cloudinary.com/dw1zug8d6/raw/upload/v1541747127/fonts/bariol/bariol_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$bariol: 'bariolregular';
+$roboto: 'Roboto', sans-serif;
+
+.payment-success{
+  width: 410px;
+  box-shadow: 0 13px 45px 0 rgba(51, 59, 69, 0.1);
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  font-family: $roboto;
+  .header{
+    position: relative;
+    height: 7px;
+    display: flex;
+    justify-content: center;
+  }
+  .body{
+    padding: 0 50px;
+    padding-bottom: 25px;
+  }
+  
+  .close{
+    position: absolute;
+    color: $primBlue;
+    font-size: 20px;
+    right: 15px;
+    top: 11px;
+    cursor: pointer;
+  }
+  .title{
+    font-family: $bariol;
+    font-size: 32px;
+    color: $slate;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  .main-img{
+    width: 243px;
+  }
+  p{
+    font-size: 13px;
+    color: $blueGray;
+  }
+  .btn{
+    border: none;
+    border-radius: 100px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    &.btn-primary{
+      background: $primBlue;
+      color: $white;
+    }
+  }
+  .cancel{
+    text-decoration: none;
+    font-size: 14px;
+    color: $blueGray;
+  }
+}
